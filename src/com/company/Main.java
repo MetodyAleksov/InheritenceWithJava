@@ -3,9 +3,15 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	    var control = new TextBox();
-        control.Enable();
+	    var control = new UIControl(true);
 
-        System.out.println(control.isEnabled());
+        show(control);
+    }
+
+    public static void show(UIControl control){
+        if(control instanceof TextBox){
+            System.out.println("I am a text box not a UIControl!");
+        }
+        System.out.println(control);
     }
 }
