@@ -3,9 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	    var control = new UIControl(true);
+	    var point1 = new Point(1, 2);
+        var point2 = new Point(1, 2);
 
-        show(control);
+        System.out.println(point1.equals(point2));
     }
 
     public static void show(UIControl control){
