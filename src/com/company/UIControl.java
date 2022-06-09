@@ -7,6 +7,8 @@ public class UIControl {
         this.isEnabled = isEnabled;
     }
 
+    public void render(){}
+
     public void Enable(){
         isEnabled = true;
     }
