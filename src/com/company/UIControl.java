@@ -1,13 +1,13 @@
 package com.company;
 
-public class UIControl {
+public abstract class UIControl {
     private boolean isEnabled = true;
 
     public UIControl(boolean isEnabled) {
         this.isEnabled = isEnabled;
     }
 
-    public void render(){}
+    public abstract void render();
 
     public void Enable(){
         isEnabled = true;
